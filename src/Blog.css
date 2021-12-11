@@ -1,8 +1,15 @@
+.App {
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
 .container--blog {
   width: 700px;
 }
 .blogpost-content {
   margin-top: 100px;
+  justify-self: end;
 }
 
 /* breadcrumb stuff */
@@ -48,7 +55,7 @@ span.breadcrumb_last,
   line-height: 175%;
 }
 .articlepiece h2 {
-  font-family: 'Avenir Next';
+  font-family: "Avenir Next";
   font-size: 32px;
   padding: 0;
   padding-top: 40px;
@@ -57,7 +64,7 @@ span.breadcrumb_last,
   color: rgba(40, 0, 75, 0.7);
 }
 .articlepiece h3 {
-  font-family: 'Avenir Next';
+  font-family: "Avenir Next";
   font-size: 24px;
   padding: 0;
   padding-top: 30px;
@@ -143,7 +150,7 @@ span.breadcrumb_last,
   transition: 0.3s;
   z-index: 2000;
   text-decoration: none;
-  font-family: 'Avenir Next';
+  font-family: "Avenir Next";
   font-size: 16px;
   letter-spacing: -0.005em;
 }

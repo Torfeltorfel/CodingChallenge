@@ -1,11 +1,10 @@
-import './Blog.css';
-import StickyBanner from './components/stickyBanner/StickyBanner.js';
+import "./Blog.css";
+import StickyBanner from "./components/stickyBanner/StickyBanner.js";
 
 function Blog() {
   return (
     <div className="App">
       <div className="blogpost-content">
-        <StickyBanner />
         <div className="container container--blog">
           <div className="breadcrumbs">
             <p id="breadcrumbs">
@@ -65,7 +64,7 @@ function Blog() {
                 In 2021, we have never seen more need to help you optimise your
                 taxes.
                 <br />
-                Here is a short piece to help you do so.{' '}
+                Here is a short piece to help you do so.{" "}
               </em>
               <em>
                 Let’s go
@@ -122,7 +121,7 @@ function Blog() {
             </h3>
             <p>
               Special taxation for copyrights is only applicable as such to
-              <strong>natural persons</strong>(<em>personnes physiques</em> or{' '}
+              <strong>natural persons</strong>(<em>personnes physiques</em> or{" "}
               <em>eenmanszaken</em>). When harvested by limited companies,
               revenue from creative work are not accounted for separately.
             </p>
@@ -255,7 +254,7 @@ function Blog() {
             <p>
               The VAT rate for operations for transfer of copyrights is
               determined according to the rules set in art. 18, § 1st, 7° of the
-              Belgian VAT code. In most cases,{' '}
+              Belgian VAT code. In most cases,{" "}
               <strong>it will be 6% or 21%</strong>, depending on the type of
               work rendered.
             </p>
@@ -434,6 +433,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      <StickyBanner />
     </div>
   );
 }

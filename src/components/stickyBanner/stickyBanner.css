@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: sticky;
+  top: 100px;
 }
 
 .containerStickyBanner--headline {
