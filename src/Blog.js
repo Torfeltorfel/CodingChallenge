@@ -1,9 +1,11 @@
 import './Blog.css';
+import StickyBanner from './components/stickyBanner/StickyBanner.js';
 
 function Blog() {
   return (
     <div className="App">
       <div className="blogpost-content">
+        <StickyBanner />
         <div className="container container--blog">
           <div className="breadcrumbs">
             <p id="breadcrumbs">
