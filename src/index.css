@@ -1,3 +1,23 @@
+:root {
+  --radial-background: radial-gradient(
+      63.37% 115.51% at 40.63% 138.29%,
+      #d7b7ff 0%,
+      rgba(215, 183, 255, 0) 100%
+    ),
+    radial-gradient(
+      56.94% 103.8% at -12.33% 125.63%,
+      #f2b6e6 0%,
+      rgba(242, 182, 230, 0) 100%
+    ),
+    radial-gradient(
+      73.96% 134.81% at 107.81% -57.59%,
+      #82a5ff 0%,
+      rgba(130, 165, 255, 0) 100%
+    ),
+    linear-gradient(107.26deg, #a33ab1 0%, rgba(163, 58, 177, 0) 76.62%),
+    #6d4ad3;
+}
+
 html,
 body {
   font-family: 'Assistant', sans-serif;
