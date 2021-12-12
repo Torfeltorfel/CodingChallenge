@@ -1,0 +1,114 @@
+.bannerSection {
+  width: 20rem;
+  height: 18.375rem;
+  position: sticky;
+  top: 6.25rem;
+}
+
+.bannerSection-gradient {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background: var(--radial-background);
+  opacity: 0.08;
+  border-radius: 1rem;
+}
+
+.bannerSection-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 1.8rem;
+  height: 100%;
+}
+
+.containerStickyBanner--headline {
+  margin: 0;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 117%;
+  letter-spacing: -0.005em;
+  color: rgba(36, 5, 72, 1);
+}
+
+.email {
+  height: 3rem;
+  background: #ffffff;
+  border-radius: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email--input {
+  border: none;
+  background: #ffffff;
+  border-radius: 200px;
+  padding-left: 1.5rem;
+  flex-grow: 1;
+}
+
+.email--input::placeholder {
+  height: 100%;
+  border: none;
+  font-family: Avenir Next;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 175%;
+  letter-spacing: 0.01em;
+  color: rgba(211, 211, 211, 1);
+}
+
+.email--input:focus {
+  outline: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6d4ad3;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: #6d4ad3;
+  color: white;
+  padding-left: 0.6rem;
+}
+
+button:focus {
+  opacity: 0.9;
+}
+
+.bannerSection-men {
+  transform: translate(105px, 50px);
+  position: absolute;
+  z-index: -200;
+  height: 65%;
+}
+
+.cloudImg-bottom {
+  position: absolute;
+  z-index: -400;
+  transform: translate(-30px, 75px);
+  border-radius: 1rem;
+}
+
+.cloudImgTopRight {
+  position: absolute;
+  z-index: -400;
+  transform: translate(146px, -83px);
+  border-radius: 1rem;
+  opacity: 0.6;
+}
+
+.cloudImgTopLeft {
+  position: absolute;
+  z-index: -400;
+  transform: translate(-15px, -72px);
+  border-radius: 1rem;
+  opacity: 0.6;
+}

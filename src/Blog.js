@@ -1,4 +1,5 @@
 import './Blog.css';
+import StickyBanner from './components/stickyBanner/StickyBanner.js';
 
 function Blog() {
   return (
@@ -29,7 +30,7 @@ function Blog() {
             Copyrights revenue for Belgian freelancers
           </h1>
           <div className="read-in">
-            Updated on <time datetime="2021-06-02">June 2, 2021</time>
+            Updated on <time dateTime="2021-06-02">June 2, 2021</time>
             <br />
             Read in
             <span className="span-reading-time rt-reading-time">
@@ -432,6 +433,7 @@ function Blog() {
           </div>
         </div>
       </div>
+      <StickyBanner />
     </div>
   );
 }
