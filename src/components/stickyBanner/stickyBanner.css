@@ -1,10 +1,8 @@
 .bannerSection {
-  box-sizing: border-box;
   width: 20rem;
   height: 18.375rem;
   position: sticky;
-  top: 100px;
-  display: flex;
+  top: 6.25rem;
 }
 
 .bannerSection-gradient {
@@ -20,8 +18,9 @@
 .bannerSection-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1.5rem 1.8rem;
+  justify-content: space-around;
+  padding: 0 1.8rem;
+  height: 100%;
 }
 
 .containerStickyBanner--headline {
@@ -79,4 +78,11 @@ button {
 
 button:focus {
   opacity: 0.9;
+}
+
+.bannerSection-men {
+  transform: translate(105px, 50px);
+  position: absolute;
+  z-index: -200;
+  height: 65%;
 }

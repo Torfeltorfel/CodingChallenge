@@ -1,6 +1,7 @@
-import React from "react";
-import "./stickyBanner.css";
-import PlayIcon from "./PlayIcon.js";
+import React from 'react';
+import './stickyBanner.css';
+import PlayIcon from './PlayIcon.js';
+import menImg from './menImg.svg';
 
 export default function StickyBanner() {
   return (
@@ -21,6 +22,7 @@ export default function StickyBanner() {
               <PlayIcon />
             </button>
           </form>
+          <img src={menImg} alt="men" className="bannerSection-men" />
         </div>
       </div>
     </>

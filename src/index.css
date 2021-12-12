@@ -1,4 +1,5 @@
 :root {
+  box-sizing: border-box;
   --radial-background: radial-gradient(
       63.37% 115.51% at 40.63% 138.29%,
       #d7b7ff 0%,
