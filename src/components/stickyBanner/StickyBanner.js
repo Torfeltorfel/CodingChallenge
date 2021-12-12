@@ -1,4 +1,5 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import './stickyBanner.css';
 import PlayIcon from './assets/PlayIcon.js';
 import menImg from './assets/menImg.svg';
@@ -7,6 +8,9 @@ import cloudMidSize from './assets/cloudMidSize.svg';
 import cloudSmallSize from './assets/cloudSmallSize.svg';
 
 export default function StickyBanner() {
+  const { handleSubmit } = useForm();
+  const onSubmit = (data) => console.log({ data });
+
   return (
     <>
       <div className="bannerSection">
@@ -25,11 +29,13 @@ export default function StickyBanner() {
           <h2 className="containerStickyBanner--headline">
             Receive 3 tax tips to start optimizing your taxes!
           </h2>
-          <form className="email">
+          <form className="email" onSubmit={handleSubmit(onSubmit)}>
             <input
-              type="email"
+              type="text"
+              name="email"
               placeholder="Your email address"
               className="email--input"
+              aria-label="Email address"
             ></input>
             <button type="submit" className="email--button">
               <PlayIcon />
