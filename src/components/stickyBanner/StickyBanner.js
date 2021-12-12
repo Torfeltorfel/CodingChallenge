@@ -1,7 +1,7 @@
 import React from 'react';
 import './stickyBanner.css';
 import PlayIcon from './PlayIcon.js';
-import menImg from './menImg.svg';
+import menImg from './assets/menImg.svg';
 
 export default function StickyBanner() {
   return (
