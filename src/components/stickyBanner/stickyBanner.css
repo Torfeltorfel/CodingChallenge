@@ -67,13 +67,16 @@
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #6d4ad3;
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
   background: #6d4ad3;
   color: white;
-  padding-left: 0.8rem;
+  padding-left: 0.6rem;
 }
 
 button:focus {
@@ -85,4 +88,27 @@ button:focus {
   position: absolute;
   z-index: -200;
   height: 65%;
+}
+
+.cloudImg-bottom {
+  position: absolute;
+  z-index: -400;
+  transform: translate(-30px, 75px);
+  border-radius: 1rem;
+}
+
+.cloudImgTopRight {
+  position: absolute;
+  z-index: -400;
+  transform: translate(146px, -83px);
+  border-radius: 1rem;
+  opacity: 0.6;
+}
+
+.cloudImgTopLeft {
+  position: absolute;
+  z-index: -400;
+  transform: translate(-15px, -72px);
+  border-radius: 1rem;
+  opacity: 0.6;
 }
