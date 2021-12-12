@@ -34,6 +34,13 @@
   color: rgba(36, 5, 72, 1);
 }
 
+.email-container {
+  height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
 .email {
   height: 3rem;
   background: #ffffff;
@@ -64,6 +71,14 @@
 
 .email--input:focus {
   outline: none;
+}
+
+.email__errorMessage {
+  align-self: flex-start;
+  margin-left: 1rem;
+  margin-top: 0.1rem;
+  color: red;
+  font-size: 10px;
 }
 
 button {
