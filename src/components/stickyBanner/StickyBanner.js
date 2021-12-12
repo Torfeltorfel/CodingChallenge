@@ -8,7 +8,7 @@ import cloudMidSize from './assets/cloudMidSize.svg';
 import cloudSmallSize from './assets/cloudSmallSize.svg';
 
 export default function StickyBanner() {
-  const { handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log({ data });
 
   return (
@@ -31,11 +31,14 @@ export default function StickyBanner() {
           </h2>
           <form className="email" onSubmit={handleSubmit(onSubmit)}>
             <input
+              {...register('email', {
+                required: true,
+                pattern:
+                  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+              })}
               type="text"
-              name="email"
               placeholder="Your email address"
               className="email--input"
-              aria-label="Email address"
             ></input>
             <button type="submit" className="email--button">
               <PlayIcon />
