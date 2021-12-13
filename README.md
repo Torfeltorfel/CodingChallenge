@@ -14,4 +14,7 @@ For building, use <code>npm build</code>
 
 
 ## Caveats
-Please note that this project doesn't have a proper backend, which could result into <code>Cors</code> issues. To avoid these, redirect your IP by clicking on: https://cors-anywhere.herokuapp.com/corsdemo
+Please note that this project doesn't have a proper backend, which could result into <code>Cors</code> issues. To avoid these, 
+1. open https://cors-anywhere.herokuapp.com/corsdemo
+2. click on the button "request temporary access to [...]"
+3. Go to the vercel app again and try to sign-up with your email again.
