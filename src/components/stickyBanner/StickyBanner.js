@@ -20,7 +20,7 @@ export default function StickyBanner() {
     setSent(!sent);
   }
 
-  async function postData(event) {
+  async function postData(email) {
     /*  event.preventdefault(); */
     console.log('test');
     try {
@@ -33,7 +33,7 @@ export default function StickyBanner() {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            email: 'test@gmail.com',
+            email: email,
           }),
         }
       );
@@ -49,23 +49,23 @@ export default function StickyBanner() {
     <>
       <div className="bannerSection">
         <div className="bannerSection-gradient"></div>
-        <div className="bannerSection-content">
+        <div className="content">
           <img
             src={cloudSmallSize}
             alt="cloud_image"
-            className="cloudImgTopLeft"
+            className="content__cloudImgTopLeft"
           />
           <img
             src={cloudMidSize}
             alt="cloud_image"
-            className="cloudImgTopRight"
+            className="content__cloudImgTopRight"
           />
           <h2 className="containerStickyBanner--headline">
             Receive 3 tax tips to start optimizing your taxes!
           </h2>
 
           <div className="email-container">
-            <form className="email" onSubmit={handleSubmit(onSubmit)}>
+            <form className="emailForm" onSubmit={handleSubmit(onSubmit)}>
               <input
                 {...register('email', {
                   required: true,
@@ -74,13 +74,13 @@ export default function StickyBanner() {
                 })}
                 type="text"
                 placeholder="Your email address"
-                className="email--input"
+                className="emailForm__input"
               ></input>
-              <button type="submit" className="email--button">
+              <button type="submit" className="email__button">
                 <PlayIcon />
               </button>
               {sent ? (
-                <div className="email__input--sent">
+                <div className="emailForm__input--sent">
                   <p>You should receive an email soon!</p>
                 </div>
               ) : (
@@ -88,17 +88,19 @@ export default function StickyBanner() {
               )}
             </form>
             {errors.email ? (
-              <p className="email__errorMessage">Please enter a valid email</p>
+              <p className="emailForm__errorMessage">
+                Please enter a valid email
+              </p>
             ) : (
               ''
             )}
           </div>
 
-          <img src={menImg} alt="men" className="bannerSection-men" />
+          <img src={menImg} alt="men" className="content__menImg" />
           <img
             src={cloudLargeSize}
             alt="cloud_image"
-            className="cloudImg-bottom"
+            className="content__cloudImgBottom"
           />
         </div>
       </div>

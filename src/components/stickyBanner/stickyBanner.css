@@ -21,7 +21,7 @@
   border-radius: 1rem;
 }
 
-.bannerSection-content {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -47,7 +47,7 @@
   flex-direction: column;
 }
 
-.email {
+.emailForm {
   height: 3rem;
   background: #ffffff;
   border-radius: 200px;
@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-.email--input {
+.emailForm__input {
   border: none;
   background: #ffffff;
   border-radius: 200px;
@@ -63,7 +63,7 @@
   flex-grow: 1;
 }
 
-.email--input::placeholder {
+.emailForm__input::placeholder {
   height: 100%;
   border: none;
   font-family: Avenir Next;
@@ -75,11 +75,11 @@
   color: rgba(211, 211, 211, 1);
 }
 
-.email--input:focus {
+.emailForm__input:focus {
   outline: none;
 }
 
-.email__input--sent {
+.emailForm__input--sent {
   position: absolute;
   height: 3rem;
   width: 15rem;
@@ -94,7 +94,7 @@
   transition: transform 330ms ease-in-out;
 }
 
-.email__errorMessage {
+.emailForm__errorMessage {
   align-self: flex-start;
   margin-left: 1rem;
   margin-top: 0.1rem;
@@ -102,7 +102,7 @@
   font-size: 10px;
 }
 
-button {
+.email__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,25 +115,29 @@ button {
   padding-left: 0.6rem;
 }
 
-button:focus {
+.email__button:hover {
   opacity: 0.9;
 }
 
-.bannerSection-men {
+.email__button:focus {
+  opacity: 0.7;
+}
+
+.content__menImg {
   transform: translate(105px, 50px);
   position: absolute;
   z-index: -200;
   height: 65%;
 }
 
-.cloudImg-bottom {
+.content__cloudImgBottom {
   position: absolute;
   z-index: -400;
   transform: translate(-30px, 75px);
   border-radius: 1rem;
 }
 
-.cloudImgTopRight {
+.content__cloudImgTopRight {
   position: absolute;
   z-index: -400;
   transform: translate(146px, -83px);
@@ -141,7 +145,7 @@ button:focus {
   opacity: 0.6;
 }
 
-.cloudImgTopLeft {
+.content__cloudImgTopLeft {
   position: absolute;
   z-index: -400;
   transform: translate(-15px, -72px);
