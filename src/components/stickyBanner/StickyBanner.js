@@ -57,7 +57,7 @@ export default function StickyBanner() {
             alt="cloud_image"
             className="content__cloudImgTopRight"
           />
-          <h2 className="containerStickyBanner--headline">
+          <h2 className="content__headline">
             Receive 3 tax tips to start optimizing your taxes!
           </h2>
 
