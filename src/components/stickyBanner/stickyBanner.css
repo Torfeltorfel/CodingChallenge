@@ -73,6 +73,21 @@
   outline: none;
 }
 
+.email__input--sent {
+  position: absolute;
+  height: 3rem;
+  width: 15rem;
+  z-index: 100;
+  border-radius: 12.5rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #6d4ad3;
+  transition: transform 330ms ease-in-out;
+}
+
 .email__errorMessage {
   align-self: flex-start;
   margin-left: 1rem;
