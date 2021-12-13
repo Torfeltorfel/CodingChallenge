@@ -21,13 +21,10 @@ export default function StickyBanner() {
   }
 
   async function postData(email) {
-    /*  event.preventdefault(); */
-    console.log('test');
     try {
       const response = await fetch(
-        'https://accountablemuj3pl9f-registerbloglead.functions.fnc.fr-par.scw.cloud',
+        'https://cors-anywhere.herokuapp.com/https://accountablemuj3pl9f-registerbloglead.functions.fnc.fr-par.scw.cloud',
         {
-          mode: 'no-cors',
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -37,8 +34,8 @@ export default function StickyBanner() {
           }),
         }
       );
-      const data = await response.json();
-      console.log(data);
+      const data = await response.text();
+      console.log(data.body);
       console.log(response);
     } catch (error) {
       console.log(error);
